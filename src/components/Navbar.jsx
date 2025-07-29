@@ -49,7 +49,7 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="text-white py-7 flex justify-between items-center">
+      <div className="text-white py-4 md:py-7 flex justify-between items-center">
         <div className="twinkle-star-regular text-lg font-bold cursor-pointer">
           <span className="text-[#8245ec]">&lt;</span>
           <span className="text-white"> Shruti </span>

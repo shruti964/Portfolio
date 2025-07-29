@@ -34,7 +34,7 @@ const Projects = () => {
       <motion.h2
         initial={{ y: -50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1.5,ease: "easeOut" }}
+        transition={{ duration: 1,ease: "easeOut" }}
         className="text-center text-3xl md:text-4xl text-white mb-12 md:mt-0"
       >
         Projects
@@ -47,7 +47,7 @@ const Projects = () => {
             key={project.title}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1.2, delay: index * 0.3 , ease: "easeOut"}}
+            transition={{ duration: 1, delay: index * 0.3 , ease: "easeOut"}}
             className="rounded-md overflow-hidden bg-white text-black shadow-lg hover:shadow-[#8245ec] transition duration-300">
             <img
               src={project.image}

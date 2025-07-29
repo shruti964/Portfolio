@@ -38,7 +38,7 @@ const TechnicalSkills = () => {
       <motion.h2
         initial={{ y: -50, opacity: 0 }}
         animate={isInView ? { y: 0, opacity: 1 } : { y: -50, opacity: 0 }}
-        transition={{ duration: 1.5 , ease: "easeOut"}}
+        transition={{ duration: 1 , ease: "easeOut"}}
         className="text-center text-3xl md:text-4xl text-white mb-12 md:mt-0 mt-7"
       >
         Technical Skills
@@ -51,7 +51,7 @@ const TechnicalSkills = () => {
             key={skill.name}
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ duration: 1.2, delay: index * 0.2, ease: "easeOut" }}
+            transition={{ duration: 1, delay: index * 0.2, ease: "easeOut" }}
             className="flex items-center gap-3 border border-gray-600 px-6 py-4 rounded-2xl shadow-md hover:shadow-[#8245ec] transition duration-300"
           >
             <span className="text-2xl">{skill.icon}</span>

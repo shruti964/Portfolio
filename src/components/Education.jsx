@@ -35,7 +35,7 @@ const Education = () => {
 
   useEffect(() => {
     const checkScreen = () => {
-      setIsMobile(window.innerWidth < 768); // Tailwind's md: 768px
+      setIsMobile(window.innerWidth < 768); 
     };
 
     checkScreen();
@@ -50,7 +50,7 @@ const Education = () => {
       <motion.h2
         initial={{ y: -50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1.5,ease: "easeOut" }}
+        transition={{ duration: 1,ease: "easeOut" }}
         viewport={{ amount: 0.3 }} 
         className="text-center text-3xl md:text-4xl text-white mb-12 md:mt-0 mt-7"
       >
@@ -62,7 +62,7 @@ const Education = () => {
          <motion.div
         initial={{ scaleY: 0, opacity: 0 }}
         whileInView={{ scaleY: 1, opacity: 1 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
+        transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ amount: 0.3 }}
         className="absolute origin-top inset-y-0 left-6 md:left-1/2 transform md:-translate-x-1/2 w-1 bg-white z-0"/>
 
@@ -74,7 +74,7 @@ const Education = () => {
               key={item.id}
               initial={{ x: animateFrom, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1.5, delay: 0.2 * index,ease: "easeOut" }}
+              transition={{ duration: 1, delay: 0.2 * index,ease: "easeOut" }}
               viewport={{ amount: 0.3 }}
               className={`relative mb-13 pl-16 md:pl-0 flex flex-col md:flex-row items-center ${
                 item.side === "left"
