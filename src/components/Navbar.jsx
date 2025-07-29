@@ -41,7 +41,7 @@ const Navbar = () => {
     <motion.nav
       initial={{ y: -60, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1,ease: "easeOut" }}
        viewport={{ once: true }}
       className={`fixed top-0 w-full z-50 px-[7vw] md:px-[7vw] lg:px-[16vw] transition duration-300 ${
         isScrolled

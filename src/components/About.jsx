@@ -39,7 +39,7 @@ const CodeTypingEffect = () => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 1.5,ease: "easeOut" }}
       viewport={{ once: true }}
       className="bg-[#0e0e1a] text-white p-4 rounded-xl shadow-md mt-12 font-mono text-sm leading-relaxed whitespace-pre-wrap h-[310px]"
     >
@@ -55,14 +55,14 @@ const About = () => {
       id="about"
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 1.5 , ease: "easeOut"}}
       className="py-0 px-[7vw] md:px-[7vw] lg:px-[15vw] font-sans mt-6 md:mt-7 lg:mt-20 scroll-mt-24"
     >
       <div className="flex flex-col md:flex-row justify-between items-center md:gap-20">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1.5,ease: "easeOut" }}
           className="md:w-1/2 flex flex-col justify-center items-center md:justify-start mb-8 md:mb-0"
         >
           <img
@@ -88,7 +88,7 @@ const About = () => {
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1.5 , ease: "easeOut"}}
           className="md:w-1/2 text-center md:text-left"
         >
           <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold text-white mb-6 leading-tight exo text-2xl ">

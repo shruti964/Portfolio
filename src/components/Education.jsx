@@ -50,8 +50,8 @@ const Education = () => {
       <motion.h2
         initial={{ y: -50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1.5 }}
-        viewport={{ amount: 0.3 }} // Not "once", so it triggers every time 30% is in view
+        transition={{ duration: 1.5,ease: "easeOut" }}
+        viewport={{ amount: 0.3 }} 
         className="text-center text-3xl md:text-4xl text-white mb-12 md:mt-0 mt-7"
       >
         Education
@@ -74,7 +74,7 @@ const Education = () => {
               key={item.id}
               initial={{ x: animateFrom, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1.5, delay: 0.2 * index }}
+              transition={{ duration: 1.5, delay: 0.2 * index,ease: "easeOut" }}
               viewport={{ amount: 0.3 }}
               className={`relative mb-13 pl-16 md:pl-0 flex flex-col md:flex-row items-center ${
                 item.side === "left"

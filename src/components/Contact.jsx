@@ -15,7 +15,7 @@ const Contact = () => {
       <motion.h2
         initial={{ y: -50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 1.5,ease: "easeOut" }}
         viewport={{ amount: 0.3 }}
         className="text-center text-3xl md:text-4xl text-white mb-12 md:mt-0"
       >
@@ -28,7 +28,7 @@ const Contact = () => {
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1.5,ease: "easeOut" }}
           viewport={{ amount: 0.3 }}
         >
           <p className="text-lg mb-9">
@@ -64,7 +64,7 @@ const Contact = () => {
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1.5,ease: "easeOut" }}
           viewport={{ amount: 0.3 }}
         >
           {state.succeeded ? (
